@@ -1,0 +1,19 @@
+
+USE HorseGame;  
+GO  
+CREATE PROCEDURE Ghora10
+@HorseName nvarchar(50),
+@HorseID int,
+@b float OUTPUT
+AS   
+DECLARE @a nvarchar(50);
+   
+SELECT @a= HorseName FROM Horses  where @HorseName=HorseName
+SELECT @b=Odds FROM Horses  where  @HorseID=HorseID and @a=HorseName
+RETURN(@b)
+GO 
+
+DECLARE @c float;
+ Exec Ghora10  @HorseName='10 Messy', @HorseID= 5, @b = @c OUTPUT
+
+ SELECT @c AS 'Number of products found';
