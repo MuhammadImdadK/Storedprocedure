@@ -1,0 +1,5 @@
+  <connectionStrings>
+   <!-- <add name="VRHomesEntities" connectionString="metadata=res://*/Classes.Model1.csdl|res://*/Classes.Model1.ssdl|res://*/Classes.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-665ARUF\SQLEXPRESS;initial Catalog=VRHomes;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    !-->
+    <add name="VRHomes" connectionString="Data Source=vrhomes.pheeca.com;Initial Catalog=VRHomes;User Id=imdad;Password=p@ssword1;" />
+  </connectionStrings>
